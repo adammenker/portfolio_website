@@ -1,0 +1,63 @@
+/*
+    Useful colors
+    rgb(21,31,41) - elements background
+    rgb(13, 18, 22) - main background
+    rgb(235, 233, 228) - borders
+    rgb(32, 36, 54) - complimentary dark
+    rgb(50, 57, 88) - complimentary mid-dark
+    rgb(61, 72, 119) - complimentary mid-light
+    rgb(105, 121, 190) - complimentary light
+    rgb(59, 59, 59) - shadow
+*/
+
+/* personal notes:
+    change stlying to neon 
+    change current page navbar highlight to js/in styles.css so not scattered
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+    color: rgb(235, 233, 228);
+    margin: 0px;
+
+    background-color: rgb(13, 18, 22);
+}
+
+#navbar{
+    background-color: rgb(21,31,41);
+    width: 100%;
+    height: 55px;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    box-shadow: 0px 3px 15px black;
+}
+
+#navbar ul{
+    text-align: left;
+    margin: 16px;
+}
+
+#navbar ul li{
+    display: inline;
+    margin-right: 15px;  
+    margin-left: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#navbar ul:hover{
+    cursor: pointer;
+}
+
+#navbar ul li a{
+    color: rgb(235, 233, 228);
+}
+

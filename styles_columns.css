@@ -1,0 +1,155 @@
+/*
+    Useful colors
+    rgb(21,31,41) - elements background
+    rgb(13, 18, 22) - main background
+    rgb(235, 233, 228) - borders
+    rgb(32, 36, 54) - complimentary dark
+    rgb(50, 57, 88) - complimentary mid-dark
+    rgb(61, 72, 119) - complimentary mid-light
+    rgb(105, 121, 190) - complimentary light
+    rgb(59, 59, 59) - shadow
+*/
+
+#navbar .skills__navbar{
+    color: red;
+}
+
+#main-wrapper{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1128px;
+    border: 2px solid rgb(235, 233, 228);
+    border-radius: 20px;
+    padding: 8px;
+    margin-top: 100px;
+    background-color: rgb(21,31,41);
+
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#row-wrapper{
+    width: 449px;
+    margin: 18px;
+    float: left;
+}
+
+#left-column{
+    padding: 18px;
+    margin: 18px;
+    height: 433px;
+    border: 2px solid rgb(235, 233, 228);
+    border-radius: 20px;
+    width: 275px;
+    float: left;
+    background-color: rgb(13, 18, 22);
+}
+
+#right-column{
+    padding: 18px;
+    margin: 18px;
+    height: 433px;
+    border: 2px solid rgb(235, 233, 228);
+    border-radius: 20px;
+    width: 275px;
+    float: left;
+    background-color: rgb(13, 18, 22);
+}
+
+#top-row{
+    width: 375px;
+    height: 252px;
+    padding: 25px;
+    border: 2px solid rgb(235, 233, 228);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    background-color: rgb(13, 18, 22);
+
+    line-height: 15px;
+}
+
+#bottom-row{
+    width: 375px;
+    height: 156px;
+    padding: 25px;
+    border: 2px solid rgb(235, 233, 228);
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(13, 18, 22);
+
+    line-height: 15px;
+}
+
+h4{
+    text-align: center;
+    margin: 20px;
+    font-size: 12px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+#skills-title{
+    text-align: center;
+    column-span: all;
+    font-size: 32px;
+    margin: 5px;
+    margin-top: 10px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 24px;
+    margin: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: lighter;
+    text-transform: uppercase;
+
+    border-bottom: 2px solid rgb(235, 233, 228);
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+li{
+    font-size: 14px;
+}
+
+#left-column ul li{
+    font-size: 24px;
+    margin-top: 10px;
+}
+#right-column ul li{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#bottom-row ul{
+    margin-top: 10px;
+}
+
+#top-row ul{
+    margin-top: 10px;
+}
+
+#top-row ul li{
+    margin-top: 3px;
+}
+
+#left-column ul{
+    margin-top: 45px;
+}
+#right-column ul{
+    margin-top: 45px;
+}
+
+.column{
+    display: inline-block;
+}

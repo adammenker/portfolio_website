@@ -1,0 +1,148 @@
+<!--
+    Name: Adam Menker
+    Pawprint: amdy6 
+    Date: 9-16-2020 
+    Challenge: Tables F20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <!-- custom stylesheets -->
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles_tables.css">
+        <title>Tables</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li ><a class="home-page__navbar" href="./Amdy6PortfolioF20.html">Adam Menker</a></li>
+                <li ><a class="skills__navbar"href="./Amdy6ColumnsF20.html">Skills</a></li>
+                <li ><a class="classes-taken__navbar" href="./Amdy6TablesF20.html">Classes Taken</a></li>
+                <li ><a class="projects__navbar" href="./Amdy6ProjectsF20.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <table class="table table-dark">
+            <thead>
+                <tr id="my-course-history-row">
+                    <th scope="col" colspan="7">My Course History</th>
+                </tr>
+                <tr id="my-university-row">
+                    <th scope="col" colspan="7">
+                        <img class="mizzou-tiger-image" src="./images/mu-tiger.png" alt="mizzou tiger">
+                        University of Missouri Columbia
+                        <img class="mizzou-tiger-image" src="./images/mu-tiger.png" alt="mizzou tiger">
+                    </th>
+                </tr>
+                <tr id="my-data-row">
+                    <th scope="col" colspan="1">Department</th>
+                    <th scope="col" colspan="1">Course</th>
+                    <th scope="col" colspan="1">Description</th>
+                    <th scope="col" colspan="1">Term</th>
+                    <th scope="col" colspan="1">Grade</th>
+                    <th scope="col" colspan="1">Units</th>
+                    <th scope="col" colspan="1">Projects</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="5" id="computer-science-department">Computer Science</td>
+                    <td>Advanced Algorithm Design</td>
+                    <td> surveys fundamental algorithms and data structures that have wide practical applicability, including search trees and graph algorithms. Emphasis is placed on techniques for efficient implementation and good software development methodologies.</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Object Oriented Programming</td>
+                    <td>focuses on object-oriented programming concepts: abstraction, polymorphism, encapsulation, inheritance, interfaces, abstract classes, files, streams, and object serialization including topics such as GUI and event-driven programming</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3</td>
+                    <td>JavaFX Applications</td>
+                </tr>
+                <tr>
+                    <td>Web Application Development</td>
+                    <td>understanding of the evolution, the technologies, and the tools of the Internet. In particular, issues pertaining to the World Wide Web and Multimedia (HTML, CGI, Web based applications)</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3</td>
+                    <td>Portfolio Website</td>
+                </tr>
+                <tr>
+                    <td>Algorithm Design and Programming II</td>
+                    <td>A study of fundamental techniques and algorithms for representing and manipulating data structures. Topics include data abstraction, recursion, stacks, queues, linked lists, trees, efficient methods of sorting and searching, and Big-O analysis.</td>
+                    <td>Spring 2020</td>
+                    <td>A-</td>
+                    <td>4</td>
+                    <td>C Based Sorting Algorithms and Data Structures</td>
+                </tr>
+                <tr>
+                    <td>Algorithm Design and Programming I</td>
+                    <td>experience in developing algorithms, designing, implementing programs. Topics include syntax/semantics, flow control, loops, recursion, I/O, arrays, strings and pointers.</td>
+                    <td>Fall 2019</td>
+                    <td>A</td>
+                    <td>4</td>
+                    <td>C Based Applications</td>
+                </tr>
+                <tr>
+                    <td rowspan="1" id="ece-department">Electrical and Copmuter Engineering</td>
+                    <td>Logic System</td>
+                    <td>Basic tools, methods and procedures to design combinational and sequential digital circuits and systems, including number systems, boolean algebra, logic minimization, circuit design, memory elements, and finite state machine design.</td>
+                    <td>Spring 2019</td>
+                    <td>A+</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" id="mathematics-department" class="bottom-left-department">Mathematics</td>
+                    <td>Calculus III</td>
+                    <td>Vectors, solid analytic geometry, calculus of several variables.</td>
+                    <td>Fall 2020</td>
+                    <td>In Progress</td>
+                    <td>3</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Calculus II</td>
+                    <td>Definite integrals, applications and techniques of integration, elementary transcendental functions, infinite series.</td>
+                    <td>Summer 2020</td>
+                    <td>A</td>
+                    <td>5</td>
+                    <td>Mathematica Graph Representations</td>
+                </tr> 
+            </tbody>
+          </table>
+
+          <div id="card">
+                <div id="card-image-div">
+                    <img id="card-image" src="./images/card-image-cs2830.JPG" alt="card image">
+                </div>
+                <div id="name-info">
+                    <h2 id="name-info__name">Adam Menker</h2>
+                    <p>Computer Science Sophomore</p>
+                    <p>Total Credit hours: 43</p>
+                </div>
+                <div id="contact-div">
+                    <h1 id="contact-header">Contact</h1>
+                    <p>adam.j.menker@gmail.com</p>
+                    <p>314-745-2931</p>
+                </div>
+          </div>
+
+    </body>
+</html>

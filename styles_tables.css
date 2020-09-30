@@ -1,0 +1,154 @@
+/*
+    Useful colors
+    rgb(21,31,41) - elements background
+    rgb(13, 18, 22) - main background
+    rgb(235, 233, 228) - borders
+    rgb(32, 36, 54) - complimentary dark
+    rgb(50, 57, 88) - complimentary mid-dark
+    rgb(61, 72, 119) - complimentary mid-light
+    rgb(105, 121, 190) - complimentary light
+    rgb(59, 59, 59) - shadow
+*/
+
+#navbar .classes-taken__navbar{
+    color: red;
+}
+
+.table{
+    margin-top: 10%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    background-color: rgb(21,31,41);
+}
+
+.table thead th{
+    text-align: center;
+    vertical-align: middle;
+    font-weight: lighter;
+}
+
+.table tbody td{
+    vertical-align: middle;
+}
+
+.table tbody td{
+    text-align: center;
+}
+
+.mizzou-tiger-image {
+    width: 100px;
+    margin: 0 2em;
+}
+
+#my-course-history-row{
+    height: 85px;
+    font-size: 2em; 
+}
+
+#my-course-history-row th{
+    border: 0px solid white;
+}
+
+#my-university-row{
+    height: 85px;
+    font-size: 1.5em;
+}
+
+#computer-science-department{
+    background-color: rgb(32, 36, 54);
+}
+
+#ece-department{
+    background-color: rgb(50, 57, 88);
+}
+
+#mathematics-department{
+    background-color: rgb(61, 72, 119);
+}
+
+.bottom-left-department{
+    border-radius: 0px 0px 0px 8px;
+}
+
+
+#card{
+    width: 50%;
+    height: 14em;
+    border: 2px solid rgb(105, 121, 190);
+    box-shadow: 3px 5px 10px rgb(59, 59, 59) ;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7em 1em 1em 7em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#card-image-div{
+    display: inline-block;
+    vertical-align: middle;  
+    width: 30%;
+}
+
+#card-image{
+    margin: 5%;
+    
+    border-radius: 50%;
+    width: 90%;
+    border: 3px solid rgb(105, 121, 190);
+}
+
+#name-info{
+    vertical-align: middle;
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+
+#name-info__name{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 15px 0px;
+    color: rgb(105, 121, 190);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgb(105, 121, 190);
+    font-weight: lighter;
+}
+
+#name-info p{
+    font-size: .8em;
+    padding: 1.5em 0px 0px 0px;
+    color: rgb(105, 121, 190);
+    text-transform: uppercase;
+}
+
+#contact-div{
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    text-align: center;
+}
+
+#contact-div p{
+    font-size: .8em;
+    padding: 1.5em 0px 0px 0px;
+    color: rgb(105, 121, 190);
+    text-transform: uppercase;
+}
+
+#contact-header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 15px 0px;
+    color: rgb(105, 121, 190);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    border-bottom: 2px solid rgb(105, 121, 190);
+    font-weight: lighter;
+}

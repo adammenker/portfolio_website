@@ -1,0 +1,121 @@
+<!--
+    Name: Adam Menker   
+    Pawprint: amdy6
+    Date: 9/11/2020
+    Challenge: Multi-Column Layout F20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <!-- custom stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="./styles_columns.css">
+        <title>Columns</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <ul>
+                <li ><a class="home-page__navbar" href="./Amdy6PortfolioF20.html">Adam Menker</a></li>
+                <li ><a class="skills__navbar"href="./Amdy6ColumnsF20.html">Skills</a></li>
+                <li ><a class="classes-taken__navbar" href="./Amdy6TablesF20.html">Classes Taken</a></li>
+                <li ><a class="projects__navbar" href="./Amdy6ProjectsF20.html">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id="main-wrapper">
+            <h3 id="skills-title">Skills</h3>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+                    247px   width
+                     36px   padding
+                     14px   border
+                 +   36px   margin
+                
+                    333px   physical width
+            -->
+            <div class="column" id="left-column">
+                <h2>Languages</h2>
+                <ul>
+                    <li>C</li>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>HTML/CSS</li>
+                </ul>
+
+            </div>
+
+            <!-- Row Wrapper. This div will contain two rows -->
+            <!--Put middle column physical width calculations here:
+                    449px   width
+                +    36px   margin
+                
+                    485px   physical width
+            -->
+            <div class="column" id="row-wrapper">
+                <div id="top-row">
+                    <h2>Coursework</h2>
+                    <ul>
+                        <li>Adavance Algorithm Design,</li>
+                        <li>Object Oriented Programming,</li>
+                        <li>Web Application Development,</li>
+                        <li>Database Applications and Information Systems,</li>
+                        <li>Computer Organization & Assembly Language,</li>
+                        <li>Discrete Mathematics,</li>
+                        <li>Calculus III</li>
+                    </ul>
+                </div>
+                <div id="bottom-row">
+                    <h2>Education</h2>
+                    <ul>
+                        <li>University of Missouri, Columbia</li>
+                        <li>GPA: 3.9/4.0</li>
+                        <li>B.S. in Computer Science</li>
+                        <li>Expected graduation: May 2023</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+                    36px    padding
+                    36px    margin
+                    14px    border
+                +   224px   width
+                
+                    310px   physical width
+            -->
+            <div class="column" id="right-column">
+                <h2>Technologies</h2>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                    <li>Linux</li>
+                    <li>MySQL</li>
+                    <li>AWS</li>
+                    <li>Git</li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
+        <h4>Last updated: 9/12/2020</h4>
+    </body>
+</html>
