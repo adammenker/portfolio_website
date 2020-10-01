@@ -8,10 +8,11 @@
     rgb(61, 72, 119) - complimentary mid-light
     rgb(105, 121, 190) - complimentary light
     rgb(59, 59, 59) - shadow
+    rgb(214, 106, 73) - navbar links
 */
 
 #navbar .classes-taken__navbar{
-    color: red;
+    color: rgb(214, 106, 73);
 }
 
 .table{

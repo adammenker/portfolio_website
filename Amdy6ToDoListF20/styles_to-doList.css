@@ -1,0 +1,122 @@
+/*
+    Useful colors
+    rgb(21,31,41) - elements background
+    rgb(13, 18, 22) - main background
+    rgb(235, 233, 228) - borders
+    rgb(32, 36, 54) - complimentary dark
+    rgb(50, 57, 88) - complimentary mid-dark
+    rgb(61, 72, 119) - complimentary mid-light
+    rgb(105, 121, 190) - complimentary light
+    rgb(59, 59, 59) - shadow
+    rgb(214, 106, 73) - navbar links
+*/
+
+
+#header-container a{
+    color: rgb(214, 106, 73);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}  
+
+
+#display-title {
+    color: rgb(235, 233, 228);
+    opacity: 0;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#to-do-guide {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;    
+}
+
+#to-do-guide h6{
+    display: inline-block;
+    width: 16.2%;
+    text-align: center;
+    
+    
+}
+
+#new-item-header{
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+#add-item-div{
+    opacity: 0;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+#add-item-form{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.form-category{
+    margin: 1.5%;
+    width: 13%;
+}
+
+#to-do-list{
+    list-style: none;
+}
+
+#to-do-list-div{
+    display: inline-block;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+    background-color: rgb(32, 36, 54);
+    border-radius: 10px;
+    height: 400px;
+    /* text-align: center; */
+    opacity: 0;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+.to-do-item div h6{
+    display: inline-block;
+    margin: 1.5%;
+    width: 16.5%;
+    text-align: center;
+}
+
+#range-container{
+    height: 19px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+#range-container input{
+    width: 90%;
+    margin-left: 5%;
+}
+
+#range-input{
+    position: absolute;
+    margin-left: 7%;
+    padding-bottom: 10px;
+}

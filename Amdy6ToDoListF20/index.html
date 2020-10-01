@@ -1,0 +1,84 @@
+<!-- 
+    Name: Adam Menker 
+    Date: 9.30.2020
+    PawPrint: Amdy6
+    Challenge: To-Do List F20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do List</title>
+        <meta charset="utf8">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <!-- custom stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="./styles_to-doList.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <div id="header-container">
+            <a rel="stylesheet" href="../html/Amdy6ProjectsF20.html">back to my projects</a>
+        </div>
+        <h1 id="display-title">To-Do List Application</h1>
+
+        
+
+        
+        <div id="add-item-div">
+            <div id="to-do-guide">
+                <h6>Title</h6>
+                <h6>Type</h6>
+                <h6>Priority</h6>
+                <h6>Date</h6>
+                <h6>Clear</h6>
+                <h6>Add Item</h6>
+            </div>
+            <h6 id="new-item-header">Add new item:</h6>
+            
+            <form id="add-item-form" action="">
+                <input class="form-category" type="text" id="title-input" name="title" placeholder="Name of Task *">
+                <select class="form-category" type="select" id="type-input" name="type">
+                    <option selected="true" disabled="disabled" value="type">Type *</option>
+                    <option value="homework">homework</option>
+                    <option value="meetings">meeting</option>
+                    <option value="projects">projects</option>
+                    <option value="fitness">fitness</option>
+                </select>
+                <span id="range-input">3</span>
+                <div id="range-container" class="form-category"><input type="range" id="priority-input" name="priority" min="0" max="5" onchange="updateTextInput(this.value);"></div>
+                <input class="form-category" type="date" 
+                       placeholder=" yyyy/mm/dd *" id="date-input" name="date" 
+                       min="2019-01-01"  onchange="checkDate()">
+                <button class="form-category" type="button" id="clear-input" name="clear" onclick="clearInput()">Clear</button>
+                <button class="form-category" type="button" id="submit-input" name="submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="to-do-list-div">
+            <ul id="to-do-list">
+                <li class="to-do-item"><div>
+                    <h6>Title</h6>
+                    <h6>Type</h6>
+                    <h6>Priority</h6>
+                    <h6>Date</h6>
+                    <h6>Action</h6>  
+                </div></li>
+            </ul>
+        </div>
+        
+    </body>
+    <script src="./index.js"></script>
+</html>
