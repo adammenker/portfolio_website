@@ -48,9 +48,6 @@ function checkDate(){
         alert("The date must be in the future");
         document.querySelector('input[type="date"]').value = `${mm}/${dd}/${yyyy}`;
     } 
-
-    // today = yyyy+'-'+mm+'-'+dd;
-    // document.getElementById("date-input").setAttribute("min", today);
 }
 
 function setMinDate(){
@@ -67,11 +64,81 @@ function setMinDate(){
 
     today = yyyy+'-'+mm+'-'+dd;
     document.getElementById("date-input").setAttribute("min", today);
-    console.log("adff")
 }
 setMinDate();
 
 function clearInput(){
-    console.log("fired");
-    $("#title-input").value = "";
+    $("#title-input").val("");
+    $("#type-input").val("type");
+    $("#priority-input").val("3");
+    $("#range-input").html(3);
+    $("#date-input").val("");
 }
+
+// *********
+
+let i = 1;
+function addItemToList(){
+    var ul = document.getElementById("to-do-list");
+    var li = document.createElement("li");
+    $(li).attr("id", `item-${i}`);
+    li.className = "to-do-item";
+    var div = document.createElement("div");
+
+    var title = document.createElement("h6");
+    var type = document.createElement("h6");
+    var priority = document.createElement("h6");
+    var date = document.createElement("h6");
+
+    var titleVal = $("#title-input").val();
+    if(titleVal === ""){
+        alert("Please fill in a title");
+        return;
+    }
+    var typeVal = $("#type-input").val();
+    if(typeVal === null){
+        alert("Please fill in a type");
+        return;
+    }
+    var priorityVal = $("#priority-input").val();
+    if(priorityVal === null){
+        alert("Please fill in a priority");
+        return;
+    }
+    var dateVal = $("#date-input").val();
+    if(dateVal === ""){
+        alert("Please fill in a date");
+        return;
+    }
+
+    $(title).html(titleVal);
+    div.appendChild(title);
+
+    $(type).html(typeVal);
+    div.appendChild(type);
+
+    $(priority).html(priorityVal);
+    div.appendChild(priority);
+
+    $(date).html(dateVal);
+    div.appendChild(date);
+
+    var actionSpan = document.createElement("span");
+    $(actionSpan).attr("class", "material-icons");
+    $(actionSpan).attr("id", `item-span-close-${i}`);
+    $(actionSpan).attr("onclick", "deleteItem(this.id)");
+    $(actionSpan).html("close");
+    div.appendChild(actionSpan);
+    
+    li.appendChild(div);
+    ul.appendChild(li);
+    clearInput();
+    i++;
+}
+
+function deleteItem(id){
+    let parentDivItem = document.getElementById(id).parentElement;
+    console.log(parentDivItem);
+    parentDivItem.remove();
+}
+    
