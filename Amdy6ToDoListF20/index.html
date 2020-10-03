@@ -9,7 +9,7 @@
 <html lang="en">
     <head>
         <title>To-Do List</title>
-        <meta charset="utf8">
+        <meta charset="utf-8">
 
         <!-- bootstrap -->
         <link rel="stylesheet" 
@@ -30,12 +30,10 @@
     </head>
     <body>
         <div id="header-container">
-            <a rel="stylesheet" href="../html/Amdy6ProjectsF20.html">back to my projects</a>
+            <a id="projects-link" rel="stylesheet" href="../html/Amdy6ProjectsF20.html">back to my projects</a>
+            <button id="toggle-color-format" onclick="switchColorFormat()">toggle dark mode</button>
         </div>
-        <h1 id="display-title">To-Do List Application</h1>
-
-        
-
+        <h1 ondblclick="changeHeader()" id="display-title">To-Do List Application</h1>
         
         <div id="add-item-div">
             <div id="to-do-guide">
@@ -48,10 +46,10 @@
             </div>
             <h6 id="new-item-header">Add new item:</h6>
             
-            <form id="add-item-form" action="">
+            <form id="add-item-form" action="./form-data.txt">
                 <input class="form-category" type="text" id="title-input" name="title" placeholder="Name of Task *">
-                <select class="form-category" type="select" id="type-input" name="type">
-                    <option selected="true" disabled="disabled" value="type">Type *</option>
+                <select class="form-category" id="type-input" name="type">
+                    <option selected disabled="disabled" value="type">Type *</option>
                     <option value="homework">homework</option>
                     <option value="meetings">meeting</option>
                     <option value="projects">projects</option>
@@ -59,9 +57,7 @@
                 </select>
                 <span id="range-input">3</span>
                 <div id="range-container" class="form-category"><input type="range" id="priority-input" name="priority" min="0" max="5" onchange="updateTextInput(this.value);"></div>
-                <input class="form-category" type="date" 
-                       placeholder=" yyyy/mm/dd *" id="date-input" name="date" 
-                       min="2019-01-01"  onchange="checkDate()">
+                <input class="form-category" type="date" id="date-input" name="date" min="2019-01-01"  onchange="checkDate()">
                 <button class="form-category" type="button" id="clear-input" name="clear" onclick="clearInput()">Clear</button>
                 <button class="form-category" type="button" id="submit-input" name="submit" onclick="addItemToList()">Submit</button>
             </form>
@@ -80,7 +76,7 @@
                 </li>
             </ul>
         </div>
-        
+        <script src="./index.js"></script>
     </body>
-    <script src="./index.js"></script>
+    
 </html>

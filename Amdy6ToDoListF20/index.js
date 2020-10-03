@@ -117,6 +117,20 @@ function addItemToList(){
     $(type).html(typeVal);
     div.appendChild(type);
 
+    if(priorityVal === "0"){
+        priorityVal = "low"
+    } else if(priorityVal === "1"){
+        priorityVal = "  *"
+    } else if(priorityVal === "2"){
+        priorityVal = "  **"
+    } else if(priorityVal === "3"){
+        priorityVal = " ***"
+    } else if(priorityVal === "4"){
+        priorityVal = " ****"
+    } else if(priorityVal === "5"){
+        priorityVal = "*****"
+    }
+
     $(priority).html(priorityVal);
     div.appendChild(priority);
 
@@ -138,7 +152,48 @@ function addItemToList(){
 
 function deleteItem(id){
     let parentDivItem = document.getElementById(id).parentElement;
-    console.log(parentDivItem);
     parentDivItem.remove();
 }
-    
+
+let mode = "light";
+function switchColorFormat(){
+    if(mode === "light"){
+        mode = "dark";
+        toggleDark();
+
+    } else if(mode === "dark"){
+        mode = "light";
+        toggleLight();
+    }
+}
+
+function toggleLight(){
+    document.body.style.backgroundColor = "rgb(235, 233, 228)";
+    document.body.style.color = "rgb(13, 18, 22)";
+    document.getElementById("to-do-list-div").style.backgroundColor = "white";
+    document.getElementById("projects-link").style.color = "rgb(60, 204, 72)";
+    document.getElementById("toggle-color-format").style.backgroundColor = "rgb(13, 18, 22)";
+    document.getElementById("toggle-color-format").style.color = "rgb(235, 233, 228)";
+    // document.getElementsByClassName("material-icons")[0].style.color = "rgb(13, 18, 22)";
+}
+toggleLight();
+
+function toggleDark(){
+    document.getElementById("toggle-color-format").style.backgroundColor = "rgb(235, 233, 228)";
+    document.body.style.color = "rgb(235, 233, 228)";
+    document.getElementById("toggle-color-format").style.color = "rgb(13, 18, 22)";
+    document.body.style.backgroundColor = "rgb(13, 18, 22)";
+    document.getElementById("to-do-list-div").style.backgroundColor = "rgb(32, 36, 54)";
+    document.getElementById("projects-link").style.color = "rgb(214, 106, 73)";
+    // document.getElementsByClassName("material-icons")[0].style.color = "rgb(235, 233, 228)";
+}
+
+// https://www.w3schools.com/jsref/met_win_prompt.asp
+function changeHeader(){
+    var title = prompt("Enter a Custom Title", "Enter Your Title");
+
+    if (title != null && title != "Enter Your Title") {
+        document.getElementById("display-title").innerHTML = title;
+    }
+}
+
