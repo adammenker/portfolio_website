@@ -192,7 +192,7 @@ function toggleDark(){
 function changeHeader(){
     var title = prompt("Enter a Custom Title", "Enter Your Title");
 
-    if (title != null && title != "Enter Your Title") {
+    if (title != null && title != "Enter Your Title" && title != "") {
         document.getElementById("display-title").innerHTML = title;
     }
 }
