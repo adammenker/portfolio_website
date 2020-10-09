@@ -79,13 +79,14 @@ function clearInput(){
 
 let i = 1;
 function addItemToList(){
-    var ul = document.getElementById("to-do-list");
-    var li = document.createElement("li");
+    var ul = document.getElementById("to-do-list"); // get the element that you are adding items to
+
+    var li = document.createElement("li"); // create a new item
     $(li).attr("id", `item-${i}`);
     li.className = "to-do-item";
-    var div = document.createElement("div");
+    var div = document.createElement("div"); // create a new item container
 
-    var title = document.createElement("h6");
+    var title = document.createElement("h6"); // create elements 
     var type = document.createElement("h6");
     var priority = document.createElement("h6");
     var date = document.createElement("h6");
@@ -131,6 +132,7 @@ function addItemToList(){
         priorityVal = "*****"
     }
 
+
     $(priority).html(priorityVal);
     div.appendChild(priority);
 
@@ -155,7 +157,7 @@ function deleteItem(id){
     parentDivItem.remove();
 }
 
-let mode = "light";
+let mode = "dark";
 function switchColorFormat(){
     if(mode === "light"){
         mode = "dark";
@@ -174,9 +176,9 @@ function toggleLight(){
     document.getElementById("projects-link").style.color = "rgb(60, 204, 72)";
     document.getElementById("toggle-color-format").style.backgroundColor = "rgb(13, 18, 22)";
     document.getElementById("toggle-color-format").style.color = "rgb(235, 233, 228)";
-    // document.getElementsByClassName("material-icons")[0].style.color = "rgb(13, 18, 22)";
+    document.getElementById("toggle-color-format").innerHTML = "toggle dark mode";
 }
-toggleLight();
+
 
 function toggleDark(){
     document.getElementById("toggle-color-format").style.backgroundColor = "rgb(235, 233, 228)";
@@ -185,8 +187,9 @@ function toggleDark(){
     document.body.style.backgroundColor = "rgb(13, 18, 22)";
     document.getElementById("to-do-list-div").style.backgroundColor = "rgb(32, 36, 54)";
     document.getElementById("projects-link").style.color = "rgb(214, 106, 73)";
-    // document.getElementsByClassName("material-icons")[0].style.color = "rgb(235, 233, 228)";
+    document.getElementById("toggle-color-format").innerHTML = "toggle light mode";
 }
+toggleDark();
 
 // https://www.w3schools.com/jsref/met_win_prompt.asp
 function changeHeader(){
