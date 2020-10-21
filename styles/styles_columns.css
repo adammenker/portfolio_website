@@ -141,14 +141,15 @@ li{
 }
 
 #top-row ul li{
-    margin-top: 3px;
+    margin-top: 14px;
+    font-size: 14px;
 }
 
 #left-column ul{
-    margin-top: 45px;
+    margin-top: 10%;
 }
 #right-column ul{
-    margin-top: 45px;
+    margin-top: 10%;
 }
 
 .column{

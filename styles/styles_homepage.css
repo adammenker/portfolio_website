@@ -15,31 +15,41 @@
     color: rgb(214, 106, 73);
 }
 
-#personal-pic {
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 40%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    border: 12px solid rgb(235, 233, 228);  
-}
-
-h3 {
-    font-weight: lighter;
-
-    color: rgb(235, 233, 228);
+#name-title {
+    padding-top: 17%;
+    font-weight: bold;
+    font-family: serif;
+    font-size: 96px;
+    color: rgb(139, 120, 74);
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     position: relative;
 }
 
-.description {
+#portfolio-link {
     text-align: center;
-    font-size: 24px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 5px;
+}
+
+.description {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+
+    font-family: sans-serif;
+    text-transform: uppercase;
     color:  rgb(235, 233, 228);
-    margin: 40px;
+    /* margin: 40px; */
+    font-size: 11px;
+    letter-spacing: 5px;
 }
 
