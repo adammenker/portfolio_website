@@ -62,4 +62,10 @@ body{
     color: rgb(235, 233, 228);
 }
 
+#navbar ul li .active__page{
+    color: rgb(214, 106, 73);
+}
+
+
+
 

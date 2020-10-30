@@ -173,7 +173,7 @@ function toggleLight(){
     document.body.style.backgroundColor = "rgb(235, 233, 228)";
     document.body.style.color = "rgb(13, 18, 22)";
     document.getElementById("to-do-list-div").style.backgroundColor = "white";
-    document.getElementById("projects-link").style.color = "rgb(60, 204, 72)";
+    document.getElementById("projects-link").style.color = "rgb(13, 18, 22)";
     document.getElementById("toggle-color-format").style.backgroundColor = "rgb(13, 18, 22)";
     document.getElementById("toggle-color-format").style.color = "rgb(235, 233, 228)";
     document.getElementById("toggle-color-format").innerHTML = "toggle dark mode";

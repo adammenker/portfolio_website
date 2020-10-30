@@ -11,10 +11,6 @@
     rgb(214, 106, 73) - navbar links
 */
 
-#navbar .projects__navbar{
-    color: rgb(214, 106, 73);
-}
-
 
 #container{
     display: flex;
