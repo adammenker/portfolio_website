@@ -1,0 +1,117 @@
+<!-- 
+    Name: Adam Menker 
+    Date: 10.30.2020
+    PawPrint: Amdy6
+    Challenge PHP F20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PHP Playground</title>
+        <meta charset="utf-8">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <!-- custom stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" href="./styles-amdy6PHPF20.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        
+        <div id="header-container">
+            <a id="projects-link" rel="stylesheet" href="../html/Amdy6ProjectsF20.html">back to my projects</a>
+        </div>
+  
+        <div id="playground_container">
+            <h1 id="display-title">PHP Playground</h1>
+            <button id="dropdown_button" onclick="showHideButtons()">click here to see function options</button>
+            <p id="playground-description">The PHP playground is a webpage that lets you use different functions to send data to a PHP file. 
+                Based on your input, a unique output will be displayed in a new tab</p>
+            <div id="dropdown-links">
+                <a onclick="displayName()" class="function-link" href="#">Name</a>
+                <a onclick="displayHammingNumber()" class="function-link" href="#">Hamming Number</a>
+                <a onclick="displayPasswordSimulation()" class="function-link" href="#">Password Simulation</a>
+                <a onclick="displayListCreator()" class="function-link" href="#">List creator</a>
+                <a onclick="displayCylinderSurfaceArea()" class="function-link" href="#">cylinder surface area</a>
+            </div>
+
+            <!-- containers below -->
+            <div class="function-form-container" id="display_name_container">
+                <form class="function-form" action="./php-amdy6PHPF20.php" method="GET" target="_blank" onsubmit="return validateNameInput()">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name" required><br><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" required><br><br>
+                    <input class="submit-button" type="submit" value="Submit">
+                </form>
+                <button class="clear-button" onclick="clearInputsOnClick()">clear</button>
+            </div>
+    
+            <div class="function-form-container" id="display_hamming_number_container">
+                <form class="function-form" action="./php-amdy6PHPF20.php" method="GET" target="_blank">
+                    <label for="quantity">Quantity (Greater than or equal to 1):</label>
+                    <br>
+                    <input type="number" id="quantity" name="quantity" min="1" placeholder="1" required>
+                    <br>
+                    <br>
+                    <input class="submit-button" type="submit">
+                </form>
+                <button class="clear-button" onclick="clearInputsOnClick()">clear</button>
+            </div>
+    
+            <div class="function-form-container"  id="display_password_simulation_container">
+                <form class="function-form" action="./php-amdy6PHPF20.php" method="POST" target="_blank">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" placeholder="username" required><br><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" minlength="8" placeholder="password" required><br><br>
+                    <input class="submit-button" type="submit">
+                </form>
+                <button class="clear-button" onclick="clearInputsOnClick()">clear</button>
+            </div>
+    
+            <div class="function-form-container" id="display_list_creator_container">
+                <form class="function-form" action="./php-amdy6PHPF20.php" action="GET" target="_blank" onsubmit="return validateListCreatorInput()">
+                    <label for="firstChar">First Character:</label><br>
+                    <input type="text" id="firstChar" name="firstChar" placeholder="a" required><br><br>
+                    <label for="secondChar">Second Char:</label><br>
+                    <input type="text" id="secondChar" name="secondChar" placeholder="z" required><br><br>
+                    <input class="submit-button" type="submit">
+                </form>
+                <button class="clear-button" onclick="clearInputsOnClick()">clear</button>
+            </div>
+    
+            <div class="function-form-container" id="display_cylinder_surface_area_container">
+                <form class="function-form" action="./php-amdy6PHPF20.php" method="GET" target="_blank">
+                    <label for="cylinderRadius">Enter a Radius</label>
+                    <br>
+                    <input type="number" id="cylinderRadius" name="cylinderRadius" min="0" placeholder="0" required>
+                    <br><br>
+                    <label for="cylinderHeight">Enter a Height</label>
+                    <br>
+                    <input type="number" id="cylinderHeight" name="cylinderHeight" min="0" placeholder="0" required>
+                    <br><br>
+                    <input class="submit-button" type="submit">
+                </form>
+                <button class="clear-button" onclick="clearInputsOnClick()">clear</button>
+            </div>
+
+            <p class="error-popup" id="error-name-validation">Sorry but that is an invalid input, you must input only letters with no spaces</p>
+            <p class="error-popup" id="error-list-creator-validation">Sorry but that is an invalid input, you must only input one character</p>
+        </div>
+        <script src="./js-amdy6PHPF20.js"></script>
+    </body>
+    
+</html>

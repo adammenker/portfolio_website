@@ -1,0 +1,183 @@
+/*
+    Useful colors
+    rgb(21,31,41) - elements background
+    rgb(13, 18, 22) - main background
+    rgb(235, 233, 228) - borders
+    rgb(32, 36, 54) - complimentary dark
+    rgb(50, 57, 88) - complimentary mid-dark
+    rgb(61, 72, 119) - complimentary mid-light
+    rgb(105, 121, 190) - complimentary light
+    rgb(59, 59, 59) - shadow
+    rgb(214, 106, 73) - navbar links
+*/
+
+#projects-link{
+    color: rgb(214, 106, 73);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 10px;
+}
+
+#playground_container {
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    background-color: rgb(32, 36, 54);
+    border: 2px solid rgb(202, 201, 196);
+    border-radius: 15px;
+    min-height: 60vh;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}  
+
+
+#display-title {
+    padding-top: 20px;
+    opacity: 0;
+    text-transform: uppercase;
+    text-align: center;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+#playground-description{
+    opacity: 0;
+    padding: 40px;
+    text-align: center;
+    width: 65%;
+    margin: auto;
+    line-height: 40px;
+    text-transform: uppercase;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+#dropdown_button {
+    opacity: 0;
+    width: 35%;
+    border: 2px solid rgb(141, 141, 141);
+    text-transform: uppercase;
+    color: rgb(235, 233, 228);
+    background-color: rgb(94, 110, 180);
+    padding: 10px;
+    text-align: center;
+    border-radius: 2em;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    animation: fadeIn 3s ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}   
+
+#dropdown_button:hover, #dropdown_button:focus, .submit-button:hover {
+    background-color: rgb(140, 155, 223);
+    cursor: pointer;
+}
+
+#dropdown-links {
+    margin-top: 70px;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    height: 300px;
+    border-radius: 15px;
+    display: none;
+}
+
+.function-link {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: none;
+    margin-top: 10px;
+    background-color: rgb(189, 189, 189);
+    border-radius: 2em;
+    text-align: center;
+    padding: 12px 16px;
+    color: black;
+}
+
+#dropdown-links a:hover, .clear-button:hover {
+    background-color: rgb(240, 240, 240);
+    border-radius: 2em;
+    cursor: pointer;
+} 
+
+.function-form-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.function-form{
+    padding: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+
+#display_name_container{
+    display: none;
+    width: 90%;
+    text-align: center;
+}
+
+#display_hamming_number_container{
+    display: none;
+    width: 90%;
+    text-align: center;
+}
+
+#display_password_simulation_container{
+    display: none;
+    width: 90%;
+    text-align: center;
+}
+
+#display_list_creator_container{
+    display: none;
+    width: 90%;
+    text-align: center;
+}
+
+#display_cylinder_surface_area_container{
+    display: none;
+    width: 90%;
+    text-align: center;
+}
+
+.error-popup{
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+.disabled{
+    color: #fff;
+}
+
+.submit-button{
+    background-color: rgb(94, 110, 180);
+    color: rgb(235, 233, 228);
+    height: 30px;
+    border: none;
+    border-radius: 2em;
+    width: 100px;
+}
+
+.clear-button{
+    background-color: rgb(204, 204, 204);
+    color: rgb(13, 18, 22);
+    height: 30px;
+    border: none;
+    border-radius: 2em;
+    width: 100px;
+    margin-bottom: 20px;
+}
