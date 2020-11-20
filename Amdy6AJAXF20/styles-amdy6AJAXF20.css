@@ -1,0 +1,162 @@
+#wrapper-div{
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#controls{
+    float: left;
+    width: 20%;
+}
+
+#photo-gallery{
+    margin-left: 5%;
+    float: left;
+    width: 50%;
+    height: 600px;
+}
+
+#description{
+    float: left;
+    width: 25%;
+    height: 400px;
+}
+
+#description__rover-name{
+    text-align: center;
+}
+
+#description__description-text{
+    text-align: justify;
+    font-size: 13.5px;
+    height: 100%;
+    overflow: scroll;
+}
+
+#description__launch-date{
+    text-align: center;
+}
+
+#display-title {
+    padding-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}  
+
+#sols-form{
+    margin-top: 100px;
+    width: 100%;
+}
+
+#sols{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#sols-label{
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cameras{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+#cameras-label{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rovers{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+#rovers-label{
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-button{
+    width: 50px;
+    margin-top: 30%;
+    text-transform: uppercase;
+}
+
+#left-button{
+    margin-left: 8%;
+}
+
+/* mess with height to make proportional */
+#rover-image{
+    width: 65%;
+    height: 75%;
+    padding: 5%;
+    border: none;
+    text-align: center;
+    object-fit: contain;
+}
+
+#errorMessage{
+    display: none;
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    bottom: 30px;
+    margin-left: 35%;
+}
+
+@keyframes loading {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#loading-text{
+    /* display: none; */
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    margin-left: 47%;
+    bottom: 100px;
+
+    animation-name: loading;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#query-button{
+    margin-top: 25px;
+    margin-left: 32%;
+    text-transform: uppercase;
+}
+
+#sol-button{
+    margin-top: 25px;
+    margin-left: 36%;
+    text-transform: uppercase;
+}

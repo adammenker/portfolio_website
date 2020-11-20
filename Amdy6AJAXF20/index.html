@@ -23,11 +23,58 @@ challenge:AJAX Fall 2020
         <!-- custom stylesheets -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/styles_projects.css">
+        <link rel="stylesheet" href="./styles-amdy6AJAXF20.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <title>Projects</title>
     </head>
-    <body>
-        <p>aaa</p>
+    <body onload="getRoverData(); getAPIData()">
+        <h1 id="display-title">Mars Explorer</h1>
+        
+        <div id="wrapper-div" class="group">
+            <div id="controls">
+                <form id="sols-form" action="">
+                    <label id="sols-label" for="sols">Martian Sol:</label>
+                    <input type="number" name="sols" id="sols" min="1" onfocusout="getNumberOfSols()">
+                    <button id="sol-button">submit</button>
+                    <label id="cameras-label" for="cameras">Camera:</label>
+                    <select name="cameras" id="cameras">
+                        <option class="camera-option" id="camera-option1" value="">CHEMCAM</option>
+                        <option class="camera-option" id="camera-option2" value="">FHAZ</option>
+                        <option class="camera-option" id="camera-option3" value="">MAST</option>
+                        <option class="camera-option" id="camera-option4" value="">NAVCAM</option>
+                        <option class="camera-option" id="camera-option5" value="">RHAZ</option>
+                        <option class="camera-option" id="camera-option6" value=""></option>
+                        <option class="camera-option" id="camera-option7" value=""></option>
+                    </select>
+                    <label id="rovers-label" for="rovers">Rover:</label>
+                    <select name="rovers" id="rovers" onchange="setActiveRover(); getNumberOfSols(); updateDescription()">
+                        <option class="rover-option" id="rover-option1" value=""></option>
+                        <option class="rover-option" id="rover-option2" value=""></option>
+                        <option class="rover-option" id="rover-option3" value=""></option>
+                    </select>
+                </form>
+                <button id="query-button" onclick="queryAPI()">Query API</button>
+            </div>
+            <div id="photo-gallery">
+                <svg onclick="navArrowClicked(-1)" id="left-button" class="nav-button" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 0-1H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5z"/>
+                </svg>
+                <img id="rover-image" src="mars-art.png" alt="image not displayed">
+                <svg onclick="navArrowClicked(1)" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-11.5.5a.5.5 0 0 1 0-1h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5z"/>
+                </svg>
+            </div>
+            <div id="description">
+                <h1 id="description__rover-name"></h1>
+                <p id="description__description-text"></p>
+                <p id="description__launch-date"></p>
+            </div>
+        </div>
+        <p id="loading-text">Loading</p>
+        <p id="errorMessage">Error: You must choose a valid camera and a sol</p>
 
+        <script src="./js-amdy6AJAXF20.js"></script>
     </body>
 </html>
